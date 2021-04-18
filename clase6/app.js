@@ -14,3 +14,6 @@ let sumasNotas = notas.reduce((a,b)=>a+b);
 
 console.log(sumasNotas);
 
+notas.forEach((valor,indice) => console.log(('valor: '+valor+' indice: '+indice)));
+
+
