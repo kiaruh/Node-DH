@@ -1,0 +1,18 @@
+[
+    {
+    "tarea": "algo0",
+    "estado": "done"
+    },
+    {
+    "tarea": "algo1",
+    "estado": "in progress"
+    },
+    {
+    "tarea": "algo2",
+    "estado": "pending"
+    },
+    {
+     "tarea": "algo3",
+    "estado": "done"
+    }
+]
