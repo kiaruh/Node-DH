@@ -1,5 +1,5 @@
 let notas = [10,4,5,6,8,7,9,2];
-let = 'hola';
+
 let notasPor100 = notas.map(function(n){
     return n*100;
 });
