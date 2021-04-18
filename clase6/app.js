@@ -1,5 +1,5 @@
 let notas = [10,4,5,6,8,7,9,2];
-
+let = 'hola';
 let notasPor100 = notas.map(function(n){
     return n*100;
 });
@@ -15,5 +15,7 @@ let sumasNotas = notas.reduce((a,b)=>a+b);
 console.log(sumasNotas);
 
 notas.forEach((valor,indice) => console.log(('valor: '+valor+' indice: '+indice)));
+
+
 
 
