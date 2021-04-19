@@ -47,13 +47,53 @@
 // console.log(bariloche);
 // console.log(china);
 
-let auto  = {marca: 'Ferrari', kilometros: 31, color: "Rojo"};
-let { marca, color } = auto;
+// let auto  = {marca: 'Ferrari', kilometros: 31, color: "Rojo"};
+// let { marca, color } = auto;
 
 
-console.log(marca);
-console.log(color);
-
+// console.log(marca);
+// console.log(color);
 
 
 // //---------------------------------------------------------
+
+// let a = [ 'a','b','c','d','e'];
+// let b = ['f','g','h','i'];
+// let c = ['hola',...a,'chau'];
+// let ab = [...a,...b];
+
+// console.log(c);
+// console.log(ab);
+
+// let car = { marca:'aaa', anio:'111',modelo:'eee'};
+// let a1 = {persona: 'pepe', edad:'30',...car};
+// let a2 = {persona: 'lala', edad:'31',...car};
+
+// console.log(a1);
+// console.log(a2);
+
+// function miFuncion(a,b,...c){
+//     return c
+// }
+// console.log(miFuncion('a','b','c','d','e'));
+
+// function sumar(...a){
+//     return a.reduce((acum,num)=>acum+num);
+// }
+
+
+// console.log(sumar(10,20,30,40,50,60));
+// console.log(sumar(2,3));
+
+// //---------------------------------------------------------
+
+
+// let fecha = new Date();
+// console.log(fecha.getDate());
+// console.log(fecha.getDay());
+// console.log(fecha.getFullYear());
+// console.log(fecha.getMonth());
+// console.log(fecha.getTime());
+
+
+
