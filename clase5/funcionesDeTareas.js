@@ -4,7 +4,10 @@ tareas = JSON.parse(tareas)
 
 let funcionesDeTareas = {
     listar: function(){
-        console.log(tareas);
+        //console.log(tareas);
+        tareas.forEach(element => { console.log('Tarea: '+ element.tarea + ' '+'Estado: ' +element.estado );            
+        });
+        
     },
     undef: function(){
         console.log('No se ha indtroducido ningun dato');
@@ -12,15 +15,27 @@ let funcionesDeTareas = {
     incorrecto: function(){
         console.log('Dato incorrecto');
     },
+    createJson: function(n){
+        
+    },
+    createSave: function(n){
+
+    },
     consultar:function(n)
     {
     switch(n) {
         case "listar":
             this.listar()
-            break;
+        break;
         case undefined:
           this.undef();
-          break;
+        break;
+        // case "CJ":
+        //     this.createJson();
+        // break;
+        // case "CS":
+        //     this.createSave();
+        // break;
         default:
             this.incorrecto();
       } 
