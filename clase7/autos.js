@@ -24,30 +24,30 @@ let autos = [auto1,auto2];
 
 module.exports = autos;
 
-let autoA = {
-    marca: 'Ford',
-    modelo: 'Fiesta',
-    color: 'Azul',
-    anio: 2019,
-    km: 200,
-    precio: 150000,
-    cuotas: 12,
-    patente: 'APL123',
-    vendido: false
-}
-let autoB = {
-    marca: 'Toyota',
-    modelo: 'Corolla',
-    color: 'Blanco',
-    anio: 2019,
-    km: 0,
-    precio: 100000,
-    cuotas: 14,
-    patente: 'JJK116',
-    vendido: false
-}
+// let autoA = {
+//     marca: 'Ford',
+//     modelo: 'Fiesta',
+//     color: 'Azul',
+//     anio: 2019,
+//     km: 200,
+//     precio: 150000,
+//     cuotas: 12,
+//     patente: 'APL123',
+//     vendido: false
+// }
+// let autoB = {
+//     marca: 'Toyota',
+//     modelo: 'Corolla',
+//     color: 'Blanco',
+//     anio: 2019,
+//     km: 0,
+//     precio: 100000,
+//     cuotas: 14,
+//     patente: 'JJK116',
+//     vendido: false
+// }
 
 
-let autos = [autoA,autoB]
+// let autos = [autoA,autoB]
 
 module.exports = autos;
