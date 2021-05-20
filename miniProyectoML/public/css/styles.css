@@ -7,55 +7,56 @@ body {
     margin: 0;
     color: #03264C;
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
+    
 }
 
 img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
 }
 /* Nav Style */
-header {
+.main-header {
     background-color: #EAC926 ;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 100;
 }
-
 .toggler {
     display: none;
 }
 .logo {
     display:flex;
-    height: 130px;
-    width: 300px;
-    margin-left: 20px;
+    width: 200px;
+    margin: 15px 10px 5px;
 }
-nav ul {
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+.main-navbar ul{
+    list-style: none;
     position: fixed;
     width: 100%;
-    height: 30hv;
-    margin-top:110px;
-    padding: 16px;
+    height: 50hv;
+    margin-top:190px;
+    padding: 0;
     background: #EAC926;
     top: -100%;
     transition:  all .5s;
-    list-style: none;
+    
 }
-nav li {
-    margin-bottom: 16px;
-    margin-left: 16px;
-}
-nav a {
+
+.main-navbar a {
+    display: inline-block;
     color: #03264C;
     text-decoration: none;
-    font-weight: Medium 500;
-    font-size: 24px;
-    text-shadow: 2px 2px 4px rgba(31,31,31,0.658);
+    padding: 5px 0;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(31,31,31,0.5);
     text-transform: uppercase;
 }
-nav a:hover {
+nav :hover {
     color: #1259c3;
     transition: ease-in .1s;
 
@@ -63,46 +64,33 @@ nav a:hover {
 .toggler:checked ~ nav ul {
     top: 0;
 }
-.burger {
+.burger-menu {
+    margin: auto;
     position: absolute;
+    display: inline-block;
+    text-align: center;
     font-size: 30px;
     color: #ebebeb;
-    text-shadow: 2px 2px 4px rgba(31,31,31,0.658);
-    top: 0;
-    right: 0;
-    margin-right: 16px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    text-shadow: 2px 2px 4px rgba(31,31,31,0.658);   
 }
+
+
+
+
+
+
+
+
+
+
 main {
-    margin-top: 145px;
+    margin-top: 190px;
 }
 /* Desketop */
 
 @media screen and (min-width: 800px) {
-    .burger {
+    .burger-menu {
         display: none;
     }
-    header {
-        display: grid;
-        grid-template-columns: 1fr auto minmax(700px, 3fr);
-    }
-
-    nav {
-        display: fixed;
-        grid-column: 3/4;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    nav ul{
-        all: unset;
-        list-style: none;
-        display: flex;
-    }
-    nav li{
-        margin-bottom: 0;
-        margin-right: 16px;
-
-    }
+   
 }

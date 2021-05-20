@@ -13,8 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
 </head>
 <body>
-    <header>
-        <img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo"/>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img class="logo" src="/img/logo-mercado-liebre.svg" />
+            <h2 class="copy-hearder">
+                <i class="fas fa-hand-holding-usd"></i>
+                 Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+        
+        <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger-menu">
+            <span><i class="fas fa-bars"></i></span></label>
+        
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li class="search-icon"><input type="search" placeholder="Buscá tu producto">
+                    <button type="submit"><i class="fas fa-search"></i></button></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">creá tu cuenta</a></li>
+                <li><a href>Ingresá</a></li>
+                <li><a href="#">Mis compras</a></li>
+            </ul>
+        </nav>
+
+
         <div class="login-container">
             <form action="/">
             <input type="text" placeholder="Usario" name="username">
@@ -22,24 +49,8 @@
             <button type="submit">Login</button>
             </form>
         </div>
-        <input id="toggler" class="toggler" type="checkbox">
-        <label for="toggler" class="burger">
-            <span><i class="fas fa-bars"></i></span></label>
-            <nav>
-                <ul>
-                </div>
-                    <div class="items">
-                        <li class="search-icon"><input type="search" placeholder="Buscá tu producto">
-                            <button type="submit"><i class="fas fa-search"></i></button></li>
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Tiendas Oficiales</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <br>
-                        <li><a href="#">creá tu cuenta</a></li>
-                        <li><a href>Ingresá</a></li>
-                        <li><a href="#">Mis compras</a></li>
-                </ul>
-               </nav>
+        
+           
     </header>
 <br>
     <main>
