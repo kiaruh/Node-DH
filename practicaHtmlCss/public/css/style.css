@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 h1 h2{
@@ -16,6 +16,7 @@ article{
     padding: 4%;
     border: solid 2px black;
     background-color: rgba(255, 127, 80, 0.74);
+    margin: auto;
 }
 
 .container01{
@@ -23,3 +24,33 @@ article{
     padding: 20px;
     border: dashed 2px green;
 }
+
+@media (min-width: 576px){
+    .container00{
+        width: 90%;
+        background-color: yellowgreen;
+        border: dashed 5px salmon;
+        color: darkblue;
+    }
+}
+@media (min-width: 768px){
+    .container00{
+        width: 50%;
+        background-color: black;
+        border: dashed 5px mediumseagreen;
+        color: white;
+    }
+}
+@media (min-width: 992px){
+    .container00{
+        width: 80%;
+        background-color: goldenrod;
+        border: dashed 5px mediumseagreen;
+        color: silver;
+    }
+    .container01{
+        display: none;
+    }
+}
+
+/* 576 768 992 1200 */
