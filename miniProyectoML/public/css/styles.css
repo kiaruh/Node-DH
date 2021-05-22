@@ -139,6 +139,16 @@ img{
 
 /* MEDIA QUERY */
 
+
+@media  (min-width:380px) {
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+
+
+}
+
 @media (min-width: 800px) {
     .burger-menu {
         display: none;
