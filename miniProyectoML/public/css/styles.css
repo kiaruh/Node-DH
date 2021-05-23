@@ -1,5 +1,6 @@
 * {
-    /* border: solid 1px black ; */
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
    }
 
@@ -11,7 +12,7 @@ body {
 }
 
 img{
-    max-width: 90%;
+    max-width: 100%;
 }
 /* Nav Style */
 .main-header {
@@ -19,21 +20,43 @@ img{
     position: fixed;
     width: 100%;
     z-index: 100;
-    margin-top: -190px; 
+    margin-top: -110px; 
+    
+}
+.main-header-top-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.search-input {
+    height: 20px;
+    width: 95px;
+    color: rgb(41, 41, 41);
+    background-color: rgba(0, 0, 0, 0.06);
+    border: 0px;
+    border-radius: 10px;
+    
+}
+.copy-header {
+    font-size: 15px;
+    font-weight: thin 100;
+    margin: auto;
     
 }
 .toggler {
     display: none;
 }
 .logo {
-    display:flex;
-    width: 200px;
+    width: 150px;
     margin: 15px 10px 5px;
 }
-.copy-header {
-    font-weight: 400;
-    text-align: center;
+.search-bar {
+    margin: auto;
+    font-size: 10px;
+    margin-right: 0;
 }
+
 .main-navbar ul{
     list-style: none;
     text-align: left;
@@ -48,7 +71,7 @@ img{
     position: fixed;
     height: 20vh;
     width: 100%;
-    margin-top:170px;
+    margin-top:100px;
     background: #EAC926;
     top: -100%;
     transition:  all .5s;
@@ -66,6 +89,7 @@ img{
     color: whitesmoke;
     transition: ease-in .1s ;
 }
+
 .toggler:checked ~ .main-navbar div {
     top: 0;
 }
@@ -73,17 +97,20 @@ img{
     margin: auto;
     display: block;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     color: #ebebeb;
     text-shadow: 2px 2px 4px rgba(31,31,31,0.658);
     padding-bottom: 8px;
 
 }
-.search-icon {
-    display: flex;
-    align-items: left;
-    margin-left: 5px;
-    padding-bottom: 5px;
+
+.search-button {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border: none;
+    background-color: #EAC926;
+    color: white;
 }
 
 .login-container { 
@@ -91,12 +118,21 @@ img{
 }
 
 
+
+
+
 /* MAIN */
 .main {
     text-align: center;
-    margin-top: 190px;
+    margin-top: 110px;
     padding: auto;
     background-color: #ebebeb;
+}
+.main-titulos {
+    font-size: 18px;
+    color: dimgray;
+    margin: 3.5%;
+
 }
 .main-banner {
     width: fit-content;
@@ -107,13 +143,14 @@ img{
 }
 
 .description-container{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 2%;
     border: solid 1px #ebebeb;
     background:white;
     text-align: center;
 }
+.description-container div {
+    margin:2% 0 2% 5%;
+}
+
 .shipping-icon {
     border: solid 1px green;
     padding: 1%;
@@ -123,17 +160,52 @@ img{
     color:green
 }
 
+.articulos {
+    max-width: 90vw;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    margin: 15px;
+
+}
+.articulos :hover {
+    box-shadow: 0px 0px 10px rgb(103, 104, 189);
+    transition: ease-in .1s ;
+}
+.description-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
 
 /* Footer */
 .footer {
+    background: rgba(0, 0, 0, 0.185);
+    padding: 3.5%;
+    margin: 0;
+}
+.footer-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     text-align: center;
     padding: auto; 
+    margin: 0%;
 }
 .footer-icon {
     font-size: 28px;
 }
+.text-copyright {
+    display: block;
+    text-align: center;
+    padding: 3%;
+    font-size: 12px;
+}
+.footer-envio, .footer-seguridad, .footer-tarjeta {
+    margin: 0 10px 0 10px;
+}
+
 
 
 
@@ -141,19 +213,64 @@ img{
 
 
 @media  (min-width:380px) {
-    .articulos {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+    .copy-header{
+        margin: 2% auto 2% auto;
+    }
+    .main-navbar div {
+        margin-top: 120px;
+    }
+
+    .articulos {  
+        margin: 10px;
+    }
+    .section-articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 14px;
+        row-gap: 1.6em;
+    }
+    .main-titulos {
+        text-align: left;
+        font-size: 1.5em; 
     }
 
 
-
+}
+@media (min-width: 590px){
+    .main-header{
+        margin-top: -90px;
+    }
+    .main{
+        margin-top: 90px;
+    }
+    .main-navbar div {
+        margin-top: 88px;
+    }
+   
 }
 
 @media (min-width: 800px) {
+    .section-articulos {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 2em;
+    }
+    .search-input {
+        width: 220px;
+    }
+    .copy-header {
+        display: flex;
+        align-content: flex-end;
+        text-align: left;
+    }
+
     .burger-menu {
         display: none;
     }
     .main-header {
+        display: block;
         position: relative;
         margin: auto;
     }
@@ -164,21 +281,25 @@ img{
     .copy-header {
         max-width: 300px;
         text-align: right;
-        padding-right: 15px;
+        padding-right: 5px;
+    }
+    .main-navbar div {
+        justify-content: space-between;
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        margin:auto;
+        padding: 0;
+        background: #EAC926;
+        top: 0;
+        transition: none;
+        }
+
+    .main-titulos {
+        font-size: 2em; 
     }
   
-    .main-navbar div {
-    justify-content: space-between;
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    margin:auto;
-    padding: 0;
-    background: #EAC926;
-    top: 0;
-    transition: none;
-    }
     .main-navbar li {
         margin: 0 5px;
     }
@@ -199,15 +320,38 @@ img{
         margin: auto;
     }
 
+    /* Footer */
+
+    .footer-container {
+        padding: 5%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: center;
+        margin: 0;
+    }
 
 
 }
 
 @media (min-width: 1200px) {
+    .main-titulos {
+        margin-left: 12%;
+    }
     .logo {
         width: 200px;
     }
-    .main-header-top-bar , .main-navbar , .search-icon {
+    .search-input {
+        height: 20px;
+        width: 400px;
+        color: rgb(41, 41, 41);
+        background-color: rgba(0, 0, 0, 0.06);
+        border: 0px;
+        border-radius: 10px;
+        
+    }
+   
+    .main-header-top-bar , .main-navbar , .search-icon, .section-articulos, .main-banner  {
         max-width: 1200px;
         margin: auto;
     }
@@ -219,8 +363,11 @@ img{
     .main-navbar li{
         margin: 0 10px;
     }
-    .main-navbar a {
+    .main-navbar a {    
         font-size: 20px;
     }
+    
+   
 
+    
 }
