@@ -127,52 +127,67 @@ img{
     padding: auto;
     background-color: #ebebeb;
 }
-.titulo { 
-    color: rgb(104, 100, 100);
-}
+
 .main-titulos {
     font-size: 18px;
     color: dimgray;
     margin: 3.5%;
 
 }
+
 .main-banner {
     width: fit-content;
     max-width: 100%;
 }
+
 .main-banner-img {
     max-width: 100%;
 }
+.titulo { 
+    background: white;
+    color: rgb(104, 100, 100);
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    bottom: 0.8em;
+
+}
 
 .description-container{
-    display: flex;
-    border: solid 1px #ebebeb;
-    background:white;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.description-container div {
-    margin:2% 0 2% 5%;
+    border: none;
+    display: grid;
+    position: relative;
+    bottom: 1.8em;
+    left: 0.5em;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    row-gap: 1.6em;
 }
 
+.articulo-img-carro {
+    background: white;
+}
+.articulo-img-carro img {
+    border:solid 1.5px #ebebeb;
+}
 .shipping-icon {
-    display: relative;
+    display: inline-block;
     position: relative;
-    left: 12em; 
-    bottom: 1em;
+    left: 3.5em; 
+    bottom: 1.2em;
     background:white;
     border: solid 1px green;
-    padding: 1%;
+    font-size: 20px;
+    padding: 3%;
     border-radius: 100px;
+    
 }
 .descuento, .shipping-icon{
     color:green
 }
 
 .articulos {
+    background: white;
     max-width: 90vw;
     box-shadow: 0px 0px 10px rgb(100,100,100);
     margin: 15px;
@@ -249,6 +264,20 @@ img{
         text-align: left;
         font-size: 1.5em; 
     }
+    .precio {
+        font-size: 14px;
+    }
+    .descuento {
+        font-size: 11px;
+    }
+    .titulo {
+        font-size: 14px;
+    }
+    .shipping-icon {
+        font-size: 12px;
+        left: 5em;
+        
+    }
 
 
 }
@@ -261,6 +290,20 @@ img{
     }
     .main-navbar div {
         margin-top: 88px;
+    }
+    .precio {
+        font-size: 18px;
+    }
+    .descuento {
+        font-size: 16px;
+    }
+    .titulo {
+        font-size: 18px;
+    }
+    .shipping-icon {
+        font-size: 15px;
+        left: 6em;
+        
     }
    
 }
@@ -338,6 +381,20 @@ img{
     .main {
         margin: auto;
     }
+    .precio {
+        font-size: 14px;
+    }
+    .descuento {
+        font-size: 11px;
+    }
+    .titulo {
+        font-size: 14px;
+    }
+    .shipping-icon {
+        font-size: 12px;
+        left: 5em;
+        
+    }
 
     /* Footer */
 
@@ -353,7 +410,7 @@ img{
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
     .main-titulos {
         margin-left: 12%;
     }
@@ -384,6 +441,21 @@ img{
     }
     .main-navbar a {    
         font-size: 20px;
+    }
+
+    .precio {
+        font-size: 20px;
+    }
+    .descuento {
+        font-size: 17px;
+    }
+    .titulo {
+        font-size: 19px;
+    }
+    .shipping-icon {
+        font-size: 20px;
+        left: 4em;
+        
     }
     
    
