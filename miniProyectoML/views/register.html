@@ -65,28 +65,31 @@
         <form action="#" style="border:1px solid #ccc">
             <div class="container">
               <h1>Regístrate</h1>
-              <p>Completa este formulario para crear tu cuenta.</p>
-
+              <p class="register-main-subtitulo">Completa este formulario para crear tu cuenta.</p>
+                <hr>
               <label for="usuario">Usuario:</label>
-              <input type="text" id="usuario" placeholder="Ingrese su usuario" name="user" minlength="2" required> 
+              <input class="main-input" type="text" id="usuario" placeholder="Ingrese su usuario" name="user" minlength="2" required> 
 
-              <input type="radio" id="comprador" name="tipo-usuario" value="comrpador">
-              <label for="coprador">Comprador</label>
-              <input type="radio" id="vendedor" name="tipo-usuario" value=""vendedor>
-              <label for="vendedor">Vendedor</label>
+              <div class="tipo-usuario"><h2>Tipo de usuario:</h2>
+                <input type="radio" id="comprador" name="tipo-usuario" value="comrpador">
+                <label for="coprador">Comprador</label>
+                <input type="radio" id="vendedor" name="tipo-usuario" value=""vendedor>
+                <label for="vendedor">Vendedor</label></div>
 
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" placeholder="Ingrese su nombre" name="name" minlength="2" required> 
+              <div class="nombre"><label for="nombre">Nombre:</label>
+                <input class="main-input"  type="text" id="nombre" placeholder="Ingrese su nombre" name="name" minlength="2" required> </div>
 
               <label for="apellido">Apellido:</label>
-              <input type="text" id="apellido" placeholder="Ingrese su apellido" name="surname" minlength="2" required>
+              <input class="main-input"  type="text" id="apellido" placeholder="Ingrese su apellido" name="surname" minlength="2" required>
 
-              <label for="nacimiento">Fecha de nacimiento</label>
-              <input type="date" name="nacimiento" id="nacimiento">
 
+              <div class="fecha-naciomiento-box">
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento">
+            </div>
 
               <label for="domicilio">Domicilio:</label>
-              <input type="text" id="domicilio" placeholder="Ingresa tu domicilio" name="address" required>
+              <input class="main-input"  type="text" id="domicilio" placeholder="Ingresa tu domicilio" name="address" required>
 
               <ul>
                   <h3>Intereses</h3>
@@ -96,24 +99,29 @@
                   <li><input type="checkbox" name="vehiculo" id="vehiculo"><label for="vehiculo">Vehículo</label></li>
               </ul>
           
-              <label for="email">Email:</label>
-              <input type="text" id="email" placeholder="Ingresa tu Email" name="email" required>
+              <div class="email-input"><label class="main-email" for="email">Email:</label>
+                <input class="main-input"  type="email" id="email" placeholder="Ingresa tu Email" name="email" required></div>
+
+              <div class="password-input">
+                <label for="psw">Contraseña:</label>
+                <input class="main-input"  type="password" id="psw" placeholder="Contraseña" name="psw" required>
+            
+                <label for="psw-repeat">Re-Contraseña:</label>
+                <input class="main-input"  type="password" id="psw-repeat" placeholder="Contraseña" name="psw-repeat" required>
+              </div>
           
-              <label for="psw">Contraseña:</label>
-              <input type="password" id="psw" placeholder="Contraseña" name="psw" required>
-          
-              <label for="psw-repeat">Re-Contraseña:</label>
-              <input type="password" id="psw-repeat" placeholder="Contraseña" name="psw-repeat" required>
-              
+              <hr>
+             <div class="condiciones"> 
+                <p>Creando la cuenta tu aceptas nuestros <a href="#" style="color:dodgerblue">Términos y condiciones</a>.</p>
+                <label>
+                  <input type="checkbox" name="condition" style="margin-bottom:15px" required> Acepto los términos
+                </label>
+             </div> 
              
-              <p>Creando la cuenta tu aceptas nuestros <a href="#" style="color:dodgerblue">Términos y condiciones</a>.</p>
-              <label>
-                <input type="checkbox" name="condition" style="margin-bottom:15px" required> Acepto los términos
-              </label>
-          
-              <div class="clearfix">
-                <button type="reset" class="cancelbtn">Cancelar</button>
-                <button type="submit" class="registerbtn" onclick="alert('Registro exitoso')">Registrar</button>
+
+              <div class="botones-registrar">
+                <button type="reset" class="cancelbtn btn-main">Cancelar</button>
+                <button type="submit" class="registerbtn btn-main" onclick="alert('Registro exitoso')">Registrar</button>
               </div>
             </div>
           </form>

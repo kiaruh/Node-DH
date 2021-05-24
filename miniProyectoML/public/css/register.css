@@ -1,3 +1,133 @@
-.main {
-    background: pink;
+body {
+  background: rgb(238, 238, 238);
 }
+
+.main {
+  margin-top: 2.5%;
+  margin-bottom: 2%;
+  max-width: 650px;
+  box-shadow: 0px 0px 10px #646464;
+  text-align:left;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.register-main-subtitulo {
+  margin-bottom: 1.5%;
+}
+
+.main-input {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: whitesmoke;
+  border-radius: 8px;
+}
+
+hr {
+  border: 2px solid #ebebeb;
+  margin-bottom: 25px;
+}
+
+.btn-main {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+button:hover {
+    opacity:1;
+  }
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #ff8880;
+
+}
+
+.cancelbtn, .registerbtn {
+    width: 50%;
+}
+
+.cancelbtn {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.registerbtn {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.botones-registrar {
+  display: flex;
+}
+
+.tipo-usuario {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.tipo-usuario h2{
+  margin-bottom: 2%;
+}
+
+.nombre {
+  margin-top: 2%;
+}
+
+.fecha-naciomiento-box {
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.container {
+  padding: 16px;
+}
+
+main ul {
+  list-style: none;
+}
+main ul input {
+ margin: 0.8% 0.5% 0.8% 0;
+}
+main ul h3 {
+  margin-top: 1%;
+}
+.email-input {
+  margin-top: 20px;
+}
+.condiciones {
+  text-align: center;
+}
+
+.footer {
+  background: rgb(238, 238, 238);
+}
+
+
+  /* media */
+
+
+  @media (max-width: 800px) {
+    .main-header {
+    margin-top: -110px; 
+    }
+    .main {
+      margin: auto;
+      margin-top: 110px;
+    }
+  }
+
+  @media (max-width: 330px) {
+    .main-navbar a{
+      font-size: 16px;
+    }
+    .main-navbar div {
+      height: 16vh;
+    }
+  }
