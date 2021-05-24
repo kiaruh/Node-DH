@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado Liebre</title>
+    <title>Formulario registro</title>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/register.css">
@@ -66,26 +66,54 @@
             <div class="container">
               <h1>Regístrate</h1>
               <p>Completa este formulario para crear tu cuenta.</p>
-              <hr>
+
+              <label for="usuario">Usuario:</label>
+              <input type="text" id="usuario" placeholder="Ingrese su usuario" name="user" minlength="2" required> 
+
+              <input type="radio" id="comprador" name="tipo-usuario" value="comrpador">
+              <label for="coprador">Comprador</label>
+              <input type="radio" id="vendedor" name="tipo-usuario" value=""vendedor>
+              <label for="vendedor">Vendedor</label>
+
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" placeholder="Ingrese su nombre" name="name" minlength="2" required> 
+
+              <label for="apellido">Apellido:</label>
+              <input type="text" id="apellido" placeholder="Ingrese su apellido" name="surname" minlength="2" required>
+
+              <label for="nacimiento">Fecha de nacimiento</label>
+              <input type="date" name="nacimiento" id="nacimiento">
+
+
+              <label for="domicilio">Domicilio:</label>
+              <input type="text" id="domicilio" placeholder="Ingresa tu domicilio" name="address" required>
+
+              <ul>
+                  <h3>Intereses</h3>
+                  <li><input type="checkbox" name="electro" id="electro"><label for="electro">Electro</label> </li>
+                  <li><input type="checkbox" name="indumentaria" id="indumentaria"><label for="indumentaria">Indumentaria</label></li>
+                  <li><input type="checkbox" name="mercado" id="mercado"><label for="mercado"></label>Mercado</li>
+                  <li><input type="checkbox" name="vehiculo" id="vehiculo"><label for="vehiculo">Vehículo</label></li>
+              </ul>
           
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Ingresa tu Email" name="email" required>
+              <label for="email">Email:</label>
+              <input type="text" id="email" placeholder="Ingresa tu Email" name="email" required>
           
-              <label for="psw"><b>Contraseña</b></label>
-              <input type="password" placeholder="Contraseña" name="psw" required>
+              <label for="psw">Contraseña:</label>
+              <input type="password" id="psw" placeholder="Contraseña" name="psw" required>
           
-              <label for="psw-repeat"><b>Contraseña</b></label>
-              <input type="password" placeholder="Contraseña" name="psw-repeat" required>
+              <label for="psw-repeat">Re-Contraseña:</label>
+              <input type="password" id="psw-repeat" placeholder="Contraseña" name="psw-repeat" required>
               
-              <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Acepto los términos
-              </label>
-              
+             
               <p>Creando la cuenta tu aceptas nuestros <a href="#" style="color:dodgerblue">Términos y condiciones</a>.</p>
+              <label>
+                <input type="checkbox" name="condition" style="margin-bottom:15px" required> Acepto los términos
+              </label>
           
               <div class="clearfix">
-                <button type="button" class="cancelbtn">Cancelar</button>
-                <button type="submit" class="signupbtn">Registrar</button>
+                <button type="reset" class="cancelbtn">Cancelar</button>
+                <button type="submit" class="registerbtn" onclick="alert('Registro exitoso')">Registrar</button>
               </div>
             </div>
           </form>
@@ -97,21 +125,21 @@
         <div class="footer-container">
             <section class="footer-tarjeta">
                 <div class="footer-icon"><i class="far fa-credit-card"></i></div>
-                <p>Pagá con tarjeta o en efectivo</p>
+                <p><b> Pagá con tarjeta o en efectivo</b></p>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo 
                     enpuntos de pago. ¡Y siempre es seguro!</p  >
             </section>
 
             <section class="footer-envio">
                 <div class="footer-icon"><i class="fas fa-gift"></i></div>
-                <p>Envío gratis desde $ 2.500</p>
+                <p><b>Envío gratis desde $ 2.500</b> </p>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                     productos. Es un beneficio de Mercado Puntos.</p>
             </section> 
 
             <section class="footer-seguridad">
                 <div class="footer-icon"><i class="fas fa-user-shield"></i></div>
-                <p>Seguridad, de principio a fin</p>
+                <p><b>Seguridad, de principio a fin</b> </p>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                     porque estás siempre protegid@.</p>
             </section>
