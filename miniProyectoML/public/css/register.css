@@ -119,12 +119,36 @@ main ul h3 {
 
   @media (max-width: 800px) {
     .main-header {
-    margin-top: -110px; 
+    margin-top: -125px; 
     }
     .main {
       margin: auto;
-      margin-top: 110px;
+      margin-bottom: 3%;
+      margin-top: 125px;
     }
+  }
+  @media (max-width: 600px) {
+    .main {
+      max-width: 90vw;
+      margin-top: 150px;
+    }
+    .main-header {
+      margin-top: -150px; 
+      }
+      .main-navbar a{
+        font-size: 18px;
+      }
+      .main-navbar div {
+        height: 18vh;
+      }
+  }
+  @media (max-width: 470px) {
+    .main {
+      margin-top: 150px;
+    }
+    .main-header {
+      margin-top: -150px; 
+      }
   }
 
   @media (max-width: 330px) {
@@ -134,4 +158,13 @@ main ul h3 {
     .main-navbar div {
       height: 16vh;
     }
+  }
+
+  @media (max-width: 300px) {
+    .main {
+      margin-top: 165px;
+    }
+    .main-header {
+      margin-top: -165px; 
+      }
   }
