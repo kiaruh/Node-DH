@@ -44,7 +44,10 @@ body {
   }
 
   hr {
+    align-self: center;
+    width: 75%;
     border: 2px solid #ebebeb;
+    margin-top: 25px;
     margin-bottom: 25px;
   }
 
@@ -75,6 +78,9 @@ body {
     background-color: #dd4b39;
     color: white;
   }
+  .login-btn {
+      margin-bottom: 4%;
+  }
  
   .login-normal {
       display: flex;
@@ -100,36 +106,49 @@ body {
 
   @media (max-width: 800px) {
     .main-header {
-    margin-top: -150px; 
+    margin-top: -160px; 
     }
     .main {
       max-width: 500px;
       margin: auto;
-      margin-top: 150px;
+      margin-top: 160px;
       margin-bottom: 3%;
     }
   }
+  @media (max-width: 500px) {
+      .main {
+          max-width: 95vw;
+      }
+  }
+
 
   @media (max-width: 330px) {
     body {
         background:white;
     }
     .main-header {
-        margin-top: -130px; 
+        margin-top: -145px; 
         }
     .main{
         border: none;
         box-shadow:none;
-        margin-top: 130px;
+        margin-top: 145px;
     }
     .main-navbar a{
-      font-size: 16px;
+      font-size: 14px;
     }
     h1 {
         font-size: 20px;
     }
     .main-navbar div {
         margin-top:110px;
+        height: 16vh;
+    }
+  }
+
+  @media (max-width: 290px){
+    .main-navbar div {
+        margin-top:150px;
         height: 16vh;
     }
   }
