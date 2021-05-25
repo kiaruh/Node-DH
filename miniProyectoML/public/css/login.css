@@ -119,6 +119,10 @@ body {
       .main {
           max-width: 95vw;
       }
+      .main-navbar div {
+  
+        height: 25vh;
+    }
   }
 
 

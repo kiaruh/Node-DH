@@ -139,8 +139,9 @@ main ul h3 {
         font-size: 18px;
       }
       .main-navbar div {
-        height: 18vh;
-      }
+  
+        height: 25vh;
+    }
   }
   @media (max-width: 470px) {
     .main {
