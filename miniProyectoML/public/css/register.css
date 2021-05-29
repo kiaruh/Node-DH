@@ -3,9 +3,11 @@ body {
 }
 
 .main {
-  margin-top: 2.5%;
-  margin-bottom: 2%;
+  align-content: center;
+  margin: auto;
   max-width: 650px;
+  margin-top: 2%;
+  margin-bottom: 2%;
   box-shadow: 0px 0px 10px #646464;
   text-align:left;
   background: rgb(255, 255, 255);
@@ -33,6 +35,12 @@ main ::-webkit-input-placeholder {
 hr {
   border: 2px solid #ebebeb;
   margin-bottom: 25px;
+}
+.boton-foto{
+  background-color: #034b9e;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 
 .btn-main {
@@ -117,55 +125,4 @@ main ul h3 {
   /* media */
 
 
-  @media (max-width: 800px) {
-    .main-header {
-    margin-top: -125px; 
-    }
-    .main {
-      margin: auto;
-      margin-bottom: 3%;
-      margin-top: 125px;
-    }
-  }
-  @media (max-width: 600px) {
-    .main {
-      max-width: 90vw;
-      margin-top: 150px;
-    }
-    .main-header {
-      margin-top: -150px; 
-      }
-      .main-navbar a{
-        font-size: 18px;
-      }
-      .main-navbar div {
-  
-        height: 25vh;
-    }
-  }
-  @media (max-width: 470px) {
-    .main {
-      margin-top: 150px;
-    }
-    .main-header {
-      margin-top: -150px; 
-      }
-  }
-
-  @media (max-width: 330px) {
-    .main-navbar a{
-      font-size: 16px;
-    }
-    .main-navbar div {
-      height: 16vh;
-    }
-  }
-
-  @media (max-width: 300px) {
-    .main {
-      margin-top: 165px;
-    }
-    .main-header {
-      margin-top: -165px; 
-      }
-  }
+ 

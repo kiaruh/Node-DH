@@ -15,53 +15,45 @@
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
 </head>
 <body>
-    <header class="main-header">
-        <div class="main-header-top-bar">
-            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" /></a>
 
-            <form class="search-bar" action="#">
-                <input class="search-input" type="text" placeholder="    Búsca productos" name="search">
-                <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
-              </form>
+  <header class="main-header">
+      
+    <div class="main-header-top-bar">
+        <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo-mercadoliebre"/></a>
 
-            <h2 class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+        <form class="search-bar" action="#">
+            <input class="search-input" type="text" placeholder="Búsca productos" name="search">
+            <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+
+        <h2 class="header-frase-top">
+            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+    </div>
+    
+    <input id="toggler" class="toggler" type="checkbox">
+    <label for="toggler" class="burger-menu">
+        <span><i class="fas fa-bars"></i></span></label>
+
+    <nav class="main-navbar">
+        <div class="main-navbar-div">
+        <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="right-navbar">
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            <li><a href ="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="/register">creá tu cuenta <i class="far fa-address-card"></i></a></li>
+        </ul>
         </div>
-        
-        <input id="toggler" class="toggler" type="checkbox">
-        <label for="toggler" class="burger-menu">
-            <span><i class="fas fa-bars"></i></span></label>
-
-        <nav class="main-navbar">
-            <div>
-            <ul class="left-navbar">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul class="right-navbar">
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                <li><a href ="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="/register">creá tu cuenta <i class="far fa-address-card"></i></a></li>
-            </ul>
-            </div>
-        </nav>
-
-
-        <div class="login-container">
-            <form action="/">
-            <input type="text" placeholder="Usario" name="username">
-            <input type="text" placeholder="Contraseña" name="psw">
-            <button type="submit">Login</button>
-            </form>
-        </div>
-        
-           
-    </header>
+    </nav>
+    
+</header>
 
     <main class="main">
-        
+
         <form action="#" style="border:1px solid #ccc">
             <div class="container">
               <h1>Regístrate</h1>
@@ -69,6 +61,11 @@
                 <hr>
               <label for="usuario">Usuario:</label>
               <input class="main-input" type="text" id="usuario" placeholder="Cosmefulanito2021" name="user" minlength="2" required> 
+
+              <div class="cargar-foto">
+                <h3>Sube una foto:</h3>
+                <input type="file" id="myFile" name="filename"accept=".png, .jpg, .heic, .pdf" >
+              </div>
 
               <div class="tipo-usuario"><h3>Tipo de usuario:</h3>
                 <input type="radio" id="comprador" name="tipo-usuario" value="comrpador">

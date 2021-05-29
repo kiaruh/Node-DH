@@ -15,17 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
     <header class="main-header">
+        
         <div class="main-header-top-bar">
-            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" /></a>
+            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo-mercadoliebre"/></a>
 
             <form class="search-bar" action="#">
-                <input class="search-input" type="text" placeholder="    Búsca productos" name="search">
+                <input class="search-input" type="text" placeholder="Búsca productos" name="search">
                 <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
               </form>
 
-            <h2 class="copy-header">
+            <h2 class="header-frase-top">
                 <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
         </div>
         
@@ -34,7 +35,7 @@
             <span><i class="fas fa-bars"></i></span></label>
 
         <nav class="main-navbar">
-            <div>
+            <div class="main-navbar-div">
             <ul class="left-navbar">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
@@ -43,22 +44,12 @@
             </ul>
             <ul class="right-navbar">
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                <li><a href ="login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href ="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="/register">creá tu cuenta <i class="far fa-address-card"></i></a></li>
             </ul>
             </div>
         </nav>
-
-
-        <div class="login-container">
-            <form action="/">
-            <input type="text" placeholder="Usario" name="username">
-            <input type="text" placeholder="Contraseña" name="psw">
-            <button type="submit">Login</button>
-            </form>
-        </div>
         
-           
     </header>
 
     <main class="main">
