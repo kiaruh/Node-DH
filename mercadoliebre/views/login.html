@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario registro</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <header class="main-header">
+        
+        <div class="main-header-top-bar">
+            <a href="/"><img class="logo" src="/img/logo-mercado-liebre.svg" alt="logo-mercadoliebre"/></a>
+
+            <form class="search-bar" action="#">
+                <input class="search-input" type="text" placeholder="Búsca productos" name="search">
+                <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+
+            <h2 class="header-frase-top">
+                <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>
+        
+        <input id="toggler" class="toggler" type="checkbox">
+        <label for="toggler" class="burger-menu">
+            <span><i class="fas fa-bars"></i></span></label>
+
+        <nav class="main-navbar">
+            <div class="main-navbar-div">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                <li><a href ="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/register">creá tu cuenta <i class="far fa-address-card"></i></a></li>
+            </ul>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main class="main">
+        
+        <form class="form" action="#" style="border:1px solid #ccc">
+        <div class="container-main">
+            <h1>Ingresa a tu cuenta</h1>
+              
+            <hr>
+            <div class="redes-sociales">
+               <a href="#" class="fb btn">
+                 <i class="fa fa-facebook fa-fw"></i> Facebook
+                </a>
+               <a href="#" class="twitter btn">
+                 <i class="fa fa-twitter fa-fw"></i> Twitter
+               </a>
+               <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                 </i> Google+
+               </a>
+             </div>
+
+             <hr>
+
+            <div class="login-normal">
+
+                <div class="labels"><label for="usuario">Usuario:</label></div>
+            
+              <input class="main-input" type="text" id="usuario" placeholder="Usarioimaginario1234" name="user" minlength="2" required> 
+              <div><label for="psw">Contraseña:</label></div>
+              <input class="main-input"  type="password" id="psw" placeholder="Contraseña" name="psw" required>
+              <a class="olvide-psw" href="#">Me olvidé la Contraseña</a>
+              <button type="submit" class="login-btn btn-main btn" >Ingresar</button> 
+            </div>
+
+              
+        </div> 
+        </form>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <section class="footer-tarjeta">
+                <div class="footer-icon"><i class="far fa-credit-card"></i></div>
+                <p><b> Pagá con tarjeta o en efectivo</b></p>
+                <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo 
+                    enpuntos de pago. ¡Y siempre es seguro!</p  >
+            </section>
+
+            <section class="footer-envio">
+                <div class="footer-icon"><i class="fas fa-gift"></i></div>
+                <p><b>Envío gratis desde $ 2.500</b> </p>
+                <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </section> 
+
+            <section class="footer-seguridad">
+                <div class="footer-icon"><i class="fas fa-user-shield"></i></div>
+                <p><b>Seguridad, de principio a fin</b> </p>
+                <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                    porque estás siempre protegid@.</p>
+            </section>
+            
+        </div>
+        <div class="text-copyright">Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</div>
+    </footer>
+
+</body>
+</html>
