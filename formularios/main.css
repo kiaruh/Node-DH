@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background: #000;
+}
+
+form{
+    background: #eee;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+form *{
+    border: none;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+input:focus{
+    border:none;
+    outline: none;
+    background-color: tomato;
+}
+
+input:checked +  label{
+    
+    background: teal;
+}
