@@ -10,7 +10,8 @@ const fetch = require('node-fetch');
 const Movies = db.Movie;
 const Genres = db.Genre;
 const Actors = db.Actor;
-const API = 'http://www.omdbapi.com/?apikey=d4e35e92';
+const API = 'http://www.omdbapi.com/?apikey=64b489bc&t=';
+
 
 const moviesController = {
     'list': (req, res) => {
@@ -56,8 +57,16 @@ const moviesController = {
             });
     },
     //Aqui debo modificar para crear la funcionalidad requerida
-    'buscar': (req, res) => {
-        
+    'buscar':(req, res) => {   
+        let title = req.body.titulo;
+      fetch(API + title)
+            .then(response =>{
+                return response.json()
+            })
+            .then(data => {
+                console.log(data);
+                res.render('moviesDetailOmdb', {movie:data})
+            })
     },
     //Aqui dispongo las rutas para trabajar con el CRUD
     add: function (req, res) {
