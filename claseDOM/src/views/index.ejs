@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="carousel">
+        <section id="wrapper">
+            <figure class="slide-container"data-slide="0">
+                <img src="https://images.unsplash.com/photo-1521058798685-39dd95c33314?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODM1NTY5MQ&ixlib=rb-1.2.1&q=85" alt="" class="slide-image">
+            </figure>
+            <figure class="slide-container" data-slide="1">
+                <img src="https://images.unsplash.com/photo-1613499039410-26c3fc223b65?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODM1NTY5MQ&ixlib=rb-1.2.1&q=85" alt="" class="slide-image">
+            </figure>
+            <figure class="slide-container" data-slide="2">
+                <img src="https://images.unsplash.com/photo-1483394943446-89e4d5530d8c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODM1NTY5MQ&ixlib=rb-1.2.1&q=85" alt="" class="slide-image">
+            </figure>
+        </section>
+        <nav>
+            <a class="arrow" href="#" data-preview="0" id="btn-preview">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a class="arrow" href="#" data-next="1" id="btn-next">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </nav>
+        <ul>
+            <li data-target="0" class="dot"><i class="fas fa-dot-circle"></i></li>
+            <li data-target="1" class="dot"><i class="far fa-dot-circle"></i></li>
+            <li data-target="2" class="dot"><i class="far fa-dot-circle"></i></li>
+        </ul>
+    </section>
+    <script src="/js/main"></script>
+</body>
+</html>
