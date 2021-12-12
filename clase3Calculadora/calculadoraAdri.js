@@ -24,5 +24,5 @@ function calculadora2 (num1, num2, operacion) {
     }
 }
 
-console.log('usando switch: ' + calculadora2(5, 3, 'resta'));
+console.log('usando switch: ' + calculadora2(4, 4, 'resta'));
 console.log('usando switch: ' + calculadora2(5, 3, 'asd'));
